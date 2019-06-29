@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/alarm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="闹钟"
+        android:textSize="18dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/alarm_time"
+        android:text="10:24"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/alarm_name"
+        android:layout_alignLeft="@id/alarm_name"
+        android:layout_marginBottom="3dp"/>
+
+    <ImageView
+        android:id="@+id/alarm_isopen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/open"
+        android:layout_alignParentRight ="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

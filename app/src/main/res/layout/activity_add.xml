@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <!-- 这里显示方式是一个两个滚动条，里面一列是时，一条列分-->
+        <TimePicker
+            android:id="@+id/time_piker_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner">
+        </TimePicker>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_spinner">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:hint="请输入闹钟名称"
+            android:layout_width="200dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_isopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="开"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radio_noopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="关"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="320dp">
+
+        <ImageView
+            android:id="@+id/setdata_timepicker"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#00000000"></ImageView>
+    </LinearLayout>
+
+</RelativeLayout>

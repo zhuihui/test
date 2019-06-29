@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Linear"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="150dp"
+    android:gravity="center|bottom">
+
+    <TextView
+        android:id="@+id/text_alarm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="150dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="闹钟"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"/>
+    <ImageView
+        android:id="@+id/ImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#00000000"></ImageView>
+
+</LinearLayout>
